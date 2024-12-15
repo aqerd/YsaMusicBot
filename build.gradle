@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'rs.aqerd'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.telegram:telegrambots:6.0.0'
+    implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+tasks.register('run', JavaExec) {
+    main = 'rs.aqerd.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+test {
+    useJUnitPlatform()
+}
