@@ -12,6 +12,13 @@ repositories {
 dependencies {
     implementation 'org.telegram:telegrambots:6.0.0'
     implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+    implementation 'io.github.openfeign:feign-core:11.10'
+    implementation 'io.github.openfeign.form:feign-form:3.8.0'
+    implementation 'io.github.openfeign:feign-jackson:11.10'
+    implementation 'io.github.openfeign:feign-okhttp:12.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    implementation 'org.slf4j:slf4j-api:2.0.16'
+    implementation 'ch.qos.logback:logback-classic:1.4.7'
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
