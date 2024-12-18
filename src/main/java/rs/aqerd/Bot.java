@@ -5,8 +5,8 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import static rs.aqerd.Config.getTelegramToken;
-import static rs.aqerd.Config.getTelegramUsername;
+import static rs.aqerd.shared.Environment.getTelegramToken;
+import static rs.aqerd.shared.Environment.getTelegramUsername;
 
 public class Bot extends TelegramLongPollingBot {
     @Override
@@ -18,7 +18,7 @@ public class Bot extends TelegramLongPollingBot {
 
             SendMessage sendMessage = SendMessage.builder()
                     .chatId(String.valueOf(message.getChatId()))
-                    .text("Ку")
+                    .text(text)
                     .build();
 
             try {
