@@ -11,7 +11,9 @@ repositories {
 
 dependencies {
     implementation 'org.telegram:telegrambots:6.0.0'
+
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+
     implementation 'io.github.cdimascio:java-dotenv:5.2.2'
 
     implementation 'io.github.openfeign:feign-core:11.10'
